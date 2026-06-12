@@ -1,0 +1,216 @@
+:root {
+  --nul-blue: #0c2d6b;
+  --nul-blue-dark: #081e4a;
+  --nul-gold: #f2b705;
+  --nul-bg: #f5f7fb;
+  --nul-text: #1f2733;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.nul-home {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: var(--nul-text);
+  background: var(--nul-bg);
+}
+
+/* Top bar */
+.nul-topbar {
+  background: var(--nul-blue);
+  color: #fff;
+}
+
+.nul-logo {
+  width: 42px;
+  height: 42px;
+  background: var(--nul-gold);
+  color: var(--nul-blue-dark);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.nul-title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.nul-subtitle {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.nul-nav a {
+  color: #e6ecf8;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nul-nav a:hover {
+  color: var(--nul-gold);
+}
+
+.nul-btn-accent {
+  background: var(--nul-gold);
+  border-color: var(--nul-gold);
+  color: var(--nul-blue-dark);
+  font-weight: 600;
+}
+
+/* Hero */
+.nul-hero {
+  background: linear-gradient(135deg, var(--nul-blue) 0%, var(--nul-blue-dark) 100%);
+  color: #fff;
+}
+
+.nul-badge {
+  display: inline-block;
+  background: rgba(242, 183, 5, 0.15);
+  color: var(--nul-gold);
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.nul-hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.nul-hero-text {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: #cdd6ea;
+  max-width: 560px;
+}
+
+.nul-btn-primary {
+  background: var(--nul-gold);
+  border: none;
+  color: var(--nul-blue-dark);
+  font-weight: 600;
+}
+
+.nul-btn-primary:hover {
+  background: #ffce33;
+  color: var(--nul-blue-dark);
+}
+
+.nul-hero-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.nul-hero-card-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+}
+
+.nul-hero-card-row:last-child {
+  border-bottom: none;
+}
+
+.nul-hero-card-row strong {
+  color: var(--nul-gold);
+}
+
+/* Sections */
+.nul-section-title {
+  font-weight: 700;
+  color: var(--nul-blue);
+}
+
+.nul-section-text {
+  color: #5a6472;
+}
+
+.nul-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.6rem;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(12, 45, 107, 0.06);
+  border: 1px solid #eef1f6;
+}
+
+.nul-card h5 {
+  color: var(--nul-blue);
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+.nul-card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--nul-blue);
+  color: var(--nul-gold);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Modules */
+.nul-modules {
+  background: #eef2f9;
+}
+
+.nul-role-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.4rem;
+  height: 100%;
+  border-left: 4px solid var(--nul-gold);
+  box-shadow: 0 4px 14px rgba(12, 45, 107, 0.05);
+}
+
+.nul-role-card h6 {
+  color: var(--nul-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.8rem;
+}
+
+.nul-role-card ul {
+  padding-left: 1.1rem;
+  margin: 0;
+  font-size: 0.92rem;
+  color: #4a5568;
+}
+
+.nul-role-card li {
+  margin-bottom: 0.35rem;
+}
+
+/* Footer */
+.nul-footer {
+  background: var(--nul-blue-dark);
+  color: #cdd6ea;
+}
+
+.nul-footer-text {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .nul-hero-title {
+    font-size: 1.8rem;
+  }
+}
